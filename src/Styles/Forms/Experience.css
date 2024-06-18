@@ -1,0 +1,161 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    background: #38a2b4 radial-gradient(rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.1));
+    padding: 10px;
+    width: 70%;
+}
+
+.experience form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.inputGroup {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience form input {
+    padding: 10px;
+    margin: 7px 0;
+    border-radius: 5px;
+    border: none;
+    width: inherit;
+}
+
+.experience label {
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: left;
+    width: inherit;
+}
+
+#experienceForm {
+    display: none;
+}
+
+/* Class to show the form */
+#experienceForm.expanded {
+    display: flex;
+    margin-top: 10px;
+    justify-self: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    width: inherit;
+    padding: 10px;
+    gap: 15px;
+}
+
+.buttons button {
+    background-color: #007bff; /* Default blue color */
+    color: white;
+    border: 1.5px solid #74a5da; /* Blue border */
+    padding: 10px 20px; /* Button size */
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer; /* Indicates the button is clickable */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.buttons .cancelButton {
+    background-color: transparent; /* Green for cancel */
+}
+
+.saveButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.cancelButton:hover {
+    background-color: #2a7785; /* Darker green on hover */
+}
+
+.companiesList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.addExperienceButton {
+    background-color: transparent; /* Default blue color */
+    color: white;
+    border: 4px solid #d8e6e9; /* Blue border */
+    padding: 10px 20px; /* Button size */
+    border-radius: 20px; /* Slightly rounded corners */
+    cursor: pointer; /* Indicates the button is clickable */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    font-size: 18px;
+    margin-top: 18px;
+    width: fit-content;
+    align-self: center;
+    transition: background-color 0.3s ease;
+}
+
+.addExperienceButton:hover {
+    background-color: #28a2b8;
+}
+
+.companiesList ul {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.companiesList li {
+    margin-bottom: 8px; /* Space between list items */
+    padding: 18px 0;
+    border-bottom: 5px solid #ddd; /* Add a light gray divider line */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.companiesList li:first-child {
+    border-top: 5px solid #ddd;
+    margin-top: 20px;
+}
+
+.temp {
+    width: 90%;
+    align-self: center;
+}
+
+.deleteButton {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.deleteButton:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+textarea {
+    padding: 10px;
+    margin: 7px 0;
+    border-radius: 5px;
+    border: none;
+    width: inherit;
+    resize: vertical;
+}
+
+#optionalText {
+    font-size: 0.8rem;
+    color: #bae3ff;
+    text-align: left;
+    width: inherit;
+    margin-left: 8px;
+}

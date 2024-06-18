@@ -1,0 +1,85 @@
+.personalInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    background: #38a2b4 radial-gradient(rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.1));
+    padding: 10px;
+    width: 70%;
+}
+
+.personalInfo form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.inputGroup {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personalInfo form input {
+    padding: 10px;
+    margin: 7px 0;
+    border-radius: 5px;
+    border: none;
+    width: inherit;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgb(15, 12, 223);
+}
+
+.personalInfo label {
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: left;
+    width: inherit;
+}
+
+#segmentTitle {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    width: inherit;
+}
+
+.infoHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.infoHeader button {
+    display: flex;
+    justify-self: end;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.dropdown-toggle {
+    margin-left: 10px; /* A little space from the title */
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#personalInfoForm {
+    display: none;
+}
+
+/* Class to show the form */
+#personalInfoForm.expanded {
+    display: flex;
+    margin-top: 10px;
+    justify-self: center;
+}

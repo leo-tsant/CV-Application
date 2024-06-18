@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* This ensures padding doesn't add extra width/height */
+}
+
+body {
+    background: #0d5764 radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    min-height: 100vh;
+}
+
+.mainContainer {
+    height: 100%;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 100px 1fr 50px;
+}

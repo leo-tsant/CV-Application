@@ -1,0 +1,15 @@
+#loadExampleBtn {
+    border-radius: 15px;
+    background: #38a2b4 radial-gradient(rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.1));
+    padding: 10px;
+    width: 70%;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#loadExampleBtn:hover {
+    background: #34d1ec radial-gradient(rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.1));
+}

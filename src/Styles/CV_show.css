@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 0.25fr 0.5fr 0.5fr 1fr;
+    background: #38a2b4 radial-gradient(rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.1));
+    width: 50%;
+    min-height: 700px;
+    height: fit-content;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.showPersonalInfo {
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    background: #34d1ec radial-gradient(rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.1));
+}
+
+.applicantName {
+    font-size: 2.3em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.restInfo {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.infoBox {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 10px;
+}
+
+.showEducation {
+    grid-row: 2; /* Occupies the second row */
+}
+
+.showExperience {
+    grid-row: 3; /* Occupies the third row */
+}
+
+.showEducation,
+.showExperience {
+    padding: 15px;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.school,
+.company {
+    display: flex;
+    font-size: 1.2rem;
+    color: #fff;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 0.8rem;
+}
+
+.nameDegree .schoolName,
+.namePosition .companyName {
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+.nameDegree .degree,
+.namePosition .positionTitle {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.namePosition .positionTitle {
+    margin-bottom: 3px;
+}
+
+.timePeriod {
+    white-space: nowrap;
+}
